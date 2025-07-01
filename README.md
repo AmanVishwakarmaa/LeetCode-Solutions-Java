@@ -1,3 +1,4 @@
-# LeetCode Solutions in Java 🧠💻
+# LeetCode Java Solutions
 
-This repository contains my **daily Java solutions** to problems from [LeetCode](https://leetcode.com).
+Daily Java solutions to LeetCode problems, organized by topic.  
+This repo helps me stay consistent with DSA practice and GitHub activity.
