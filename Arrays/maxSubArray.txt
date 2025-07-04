@@ -1,0 +1,20 @@
+//Link:- https://leetcode.com/problems/maximum-subarray/
+class Solution {
+    public int maxSubArray(int[] nums) {
+        // Step 1: Start with the first element as both max and current sum
+        int maxSum = nums[0];      // Keeps track of the highest sum found so far
+        int currentSum = nums[0];  // Stores the sum of the current subarray
+
+        // Step 2: Traverse from the 2nd element
+        for (int i = 1; i < nums.length; i++) {
+            // Decide: Start new subarray at nums[i] or extend current subarray
+            currentSum = Math.max(nums[i], currentSum + nums[i]);
+
+            // Update global maximum if needed
+            maxSum = Math.max(maxSum, currentSum);
+        }
+
+        // Step 3: Return the max subarray sum
+        return maxSum;
+    }
+}
